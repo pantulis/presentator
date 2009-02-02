@@ -1,0 +1,7 @@
+      <% @thumbnails.in_groups_of(4) do |grupo| %>
+        <ul class='clearfix'>
+         <% grupo.each do |elemento| %>
+         <li><a href="<%= elemento.url %>"><img src="<%= elemento.thumbnail %> "></a><span>XXX wadus</span></li>
+         <% end %>
+        </ul>
+      <% end %>

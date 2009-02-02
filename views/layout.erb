@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+          <title>The Cocktail » <%= @config['project'] %>  - <%= @config['fecha'] %></title>
+        <link rel="stylesheet" href="/stylesheets/style.css" type="text/css" media="screen" title="no title" charset="utf-8"/>
+  </head>
+  <body id="album" class="thumb">
+          <div id="envelope">
+
+        <div id="header">
+          <h1><span>The Cocktail</span></h1>
+          <div id="head_tools">
+            <p>Última modificación<br /> WADUS </p>
+
+            <p><span>ver como:</span></p>
+            <ul>
+
+              <li class="li_lista"><a href="?view=list"><span>lista</span></a></li>
+              <li class="li_miniatura"><a href="?view=thumb"><span>miniaturas</span></a></li>
+            </ul>
+
+          </div><!-- end #head_tools -->
+
+      </div><!-- end #header -->
+
+      <div id="proyecto_cliente">
+
+        <h2>WADUS </h2>
+
+        <img src="<%= @config['logo_url'] %>" alt="Client Logo">
+
+      </div><!-- end #proyecto_cliente -->
+      <div id="contenido" class="clearfix">
+      <h3>Última versión <small>06 September 2008</small></h3>
+      <ul class='clearfix'>
+
+      <%= yield %>
+
+      </div><!-- end #contenido -->
+
+      <div id="footer">
+        <p class="legal">© 2008 The Cocktail Experience</p>
+
+        <p class="presentator"><span>presentator</span></p>
+      </div><!-- end #footer -->
+
+      </div><!-- end #envelope -->
+
+      </body>
+</html>

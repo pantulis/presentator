@@ -1,0 +1,349 @@
+/* Presentator v1.1                             */
+/* Jorge Correa <jorge.correa@the-cocktail.com> */
+/* 2008-02-21                                   */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial","Helvetica",sans-serif;
+  text-align:center;
+}
+body#album {
+  background: #585858 url("/img/body_bg.png") repeat-x;
+}
+
+
+a img {
+  border:0;
+  padding:0;
+}
+#envelope {
+  width:950px;
+  margin:0 auto;
+  text-align:left;
+}
+
+/* HEADER HEADER HEADER HEADER */
+#header {
+  background: #333 url("/img/header_bg.png") repeat-x;
+  height:82px;
+}
+#header_control {
+  height:62px;
+  position:absolute;
+  margin-top:62px;
+  width:100%;
+  display:block;
+}
+#header h1 {
+  margin:0;
+  padding:0;
+  width:215px;
+  height:82px;
+  background: #333 url("/img/cocktail_logo.png") no-repeat;
+}
+#header span { display:none; }
+#header #head_tools {
+  float:right;
+  margin-top:-80px;
+  width:250px;
+}
+#header #head_tools p {
+  text-shadow: #000 0px 1px 1px;
+  color:#666666;
+  font-size:.75em;
+  font-weight:bold;
+  text-align:right;
+  float:left;
+  margin:25px 0 0 0 ;
+}
+#header #head_tools p span, #control_tools p span {
+  display:none;
+}
+#header #head_tools ul {
+  float:right;
+  list-style-type:none;
+  display:inline;
+  width:100px;
+  margin:13px 0 0 0;
+  padding:0;
+}
+#control_tools ul {
+  list-style-type:none;
+  display:block;
+  width:100px;
+  margin:13px 0 0 0;
+  padding:0;
+}
+#header #head_tools ul li {
+  list-style-type:none;
+  display:inline;
+  margin:0;
+  padding:0;
+}
+#header #head_tools ul li.li_lista a {
+  background: #333 url("/img/li_lista.png") no-repeat;
+  width:50px;
+  height:50px;
+  float:left;
+  margin:0;
+  padding:0;
+}
+#header #head_tools ul li.li_miniatura a {
+  background: #333 url("/img/li_miniatura.png") no-repeat;
+  width:50px;
+  height:50px;
+  float:right;
+  margin:0;
+  padding:0;
+}
+body.list #header #head_tools ul li.li_lista a {
+  background: #333 url("/img/li_lista_on.png") no-repeat;
+}
+body.thumb #header #head_tools ul li.li_miniatura a {
+  background: #333 url("/img/li_miniatura_on.png") no-repeat;
+}
+
+/* SHOW IMAGE SHOW IMAGE SHOW IMAGE SHOW IMAGE SHOW IMAGE */
+#show_image { clear:both; }
+
+/*#oculto span {display:none;}*/
+#oculto {
+  display:block;
+  width:100%;
+  height:30px;
+  float:left;
+  margin-top:0;
+  padding:0;
+  position:absolute;
+  overflow:hidden;
+}
+
+#control_tools {
+  width:100%;
+  float:left;
+  background: #333 url("/img/header_control_bg.png") repeat-x;
+  height:62px;
+  display:none;
+}
+
+#control_tools ul.browse {
+  float:right;
+  margin:5px 5px 0 0;
+}
+#control_tools ul li.li_siguiente a {
+  background: #333 url("/img/li_siguiente.png") no-repeat;
+  width:50px;
+  height:50px;
+  float:right;
+  margin:0;
+  padding:0;
+}
+#control_tools ul li.li_anterior a {
+  background: #333 url("/img/li_anterior.png") no-repeat;
+  width:50px;
+  height:50px;
+  float:right;
+  margin:0;
+  padding:0;
+}
+#control_tools ul.home {
+  float:left;
+  margin:5px 0 0 5px;
+}
+#control_tools ul li.li_home a {
+  background: #333 url("/img/li_home.png") no-repeat;
+  width:50px;
+  height:50px;
+  float:left;
+  margin:0;
+  padding:0;
+}
+#control_tools ul li.li_siguiente a span,
+#control_tools ul li.li_anterior a span,
+#control_tools ul li.li_home a span {
+  display:none;
+}
+#control_tools ul li.li_siguiente a:hover {
+  background: #333 url("/img/li_siguiente_on.png") no-repeat;
+}
+#control_tools ul li.li_anterior a:hover {
+  background: #333 url("/img/li_anterior_on.png") no-repeat;
+}
+#control_tools ul li.li_home a:hover {
+  background: #333 url("/img/li_home_on.png") no-repeat;
+}
+
+/* PROYECTO_CLIENTE PROYECTO_CLIENTE PROYECTO_CLIENTE */
+#proyecto_cliente {
+  background-color:#fff;
+  border-bottom:3px solid #727272;
+  margin:20px 0;
+  height:70px;
+}
+#proyecto_cliente h2 {
+  text-shadow: #ccc 0px 1px 1px;
+  margin:0;
+  padding: 25px 0 0 20px;
+  color:#90AC2B;
+  float:left;
+  text-transform: uppercase;
+  font-size:1.3em;
+}
+#proyecto_cliente ../img/ {
+  float:right;
+}
+#view {
+  display:block;
+  overflow:hidden;
+  width:1100px;
+  margin:0 auto;
+}
+
+/* CONTENIDO CONTENIDO CONTENIDO CONTENIDO */
+body#album #contenido {
+  background-color:#323232;
+  border-bottom:3px solid #505050;
+  margin:0;
+  padding:20px 30px;
+  font-size:.8em;
+  overflow: hidden;
+  width:890px;
+}
+#contenido h3 {
+  display: block;
+  clear: both;
+  text-shadow: #000 0px 1px 1px;
+  color:#999999;
+}
+#contenido h3 small {
+  text-shadow: #000 0 0 0;
+  color:#666;
+  background-color:#222;
+  padding:2px 4px;
+  font-size:11px;
+  font-weight:normal;
+  margin-left:5px;
+}
+body#album #contenido a {
+  color:#90AC2B;
+  text-decoration:none;
+  padding:.25em .45em .25em 25px;
+  font-size:1.1em;
+  background: #333 url("/img/li_bg.png") no-repeat;
+}
+body#album #contenido a:hover {
+  text-shadow: #6C8020 0px 1px 1px;
+  background-color:#90AC2B;
+  color:#fff;
+  text-decoration:none;
+  padding:.25em .45em .25em 25px;
+  font-weight:bold;
+  background: #90AC2B url("/img/li_bg_hover.png") no-repeat;
+}
+#contenido ul li {
+  margin: 0 0 .6em 0;
+  padding:0;
+}
+#contenido ul {
+  list-style-type:none;
+  padding:0 0 0 .3em;
+  margin:0 0 30px 0;
+}
+body#album.thumb #contenido ul {
+  margin: 0 0 20px 0;
+  padding: 0;
+  display:block;
+}
+body#album.thumb #contenido ul li {
+  margin: 0 15px 20px 15px;
+  padding: 0;
+  float: left;
+  display: inline;
+  width: 185px;
+}
+body#album.thumb #contenido ul li a {
+  width:185px;
+  margin: 0;
+  padding: 0;
+  background: none;
+  display: block;
+  border:5px solid #323232;
+}
+body#album.thumb #contenido ul li a:hover {
+  margin: 0;
+  padding: 0;
+  background: none;
+  display: block;
+  border:5px solid #222222;
+}
+body#album.thumb #contenido ul li span {
+  text-shadow: #222 0px 2px 1px;
+  display: block;
+  margin: 2px 0 0 5px;
+  color: #999;
+  font-weight:normal
+}
+body.list #contenido ul li span {
+  display: block;
+  width:740px;
+  background-color:#525252;
+  color: #ccc;
+  line-height:150%;
+  font-size:.95em;
+  font-weight:normal;
+  padding:10px 12px;
+  margin: 5px 0 5px 20px;
+}
+
+/* FOOTER FOOTER FOOTER FOOTER */
+#footer {
+  font-size:.75em;
+  height:65px;
+}
+#footer p.legal {
+  float:left;
+  margin-top:15px;
+  color:#B2B2B2;
+}
+#footer p.presentator {
+  float:right;
+  background: #333 url("/img/presentator.png") no-repeat;
+  width:215px;
+  height:44px;
+  margin:0px;
+}
+#footer p.presentator span {
+  display:none;
+}
+
+body#imagen #header,
+body#imagen #footer,
+body#imagen #proyecto_cliente {
+  display:none;
+}
+
+/* TOOLS TOOLS TOOLS TOOLS */
+#tools {
+  font-size: 0.8em;
+  color: #fff;
+  background-color: #333;
+  padding: 5px;
+  text-align: right;
+}
+#tools a { color: #fc0; }
+h1,
+#content { margin: 1em; }
+
+.clearfix:after {
+  content: "."; 
+  display: block; 
+  height: 0; 
+  clear: both; 
+  visibility: hidden;
+}
+.clearfix { display:inline-block; }
+
+/* Hides from IE-mac \*/
+* html .clearfix { height: 1%; }
+/* End hide from IE-mac */
